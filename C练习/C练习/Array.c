@@ -122,5 +122,5 @@ int main()
 	int arr[] = { 1,2,3,5,8,54,8,99,30 };
 	double ret = Array_Average(&arr, 9);
 	printf("%f", ret);
-
+	//
 }
