@@ -8,7 +8,7 @@
 * @author  小宇
 * @date    2025-8-29
 * @vision  1.0
-*/
+* @Statementhttps:学习资料来自于主要来自于菜鸟教程以及github.com/wuxiaolie
 
 /*	sizeof(arr) / sizeof(arr[0])	计算数组元素个数 */
 
@@ -98,11 +98,11 @@ int main()
 
 /* 3.反转数组
 */
-void reserve_Array(char array[],int size)
+void reverve_Array(char array[],int size)
 {
-	char *start = array;
+	char* start = array;
 	char* end = array + size - 1;
-	for (int i = 0; i < size; i++)
+	for (int i = 0; i < size / 2; i++)
 	{
 		char temp = *start;
 		*start = *end;
@@ -112,15 +112,49 @@ void reserve_Array(char array[],int size)
 	}
 }
 
-int main()
-{
-	char arr1 = { "evol" };
-	int len = strlen("arrl");
-	char arr2[] = { 100 };
+//int main()
+//{
+//	char arr1[] = {"evol"};
+//	int len = 4;
+//	char arr2[100];
+//
+//	reverve_Array(arr1, len);
+//	int arr[] = { 1,2,3,5,8,54,8,99,30 };
+//	/*double ret = Array_Average(&arr, 9);*/
+//	printf("%s", arr1);
+//	//
+//}
 
-	reserve_Array(arr1, len);
-	int arr[] = { 1,2,3,5,8,54,8,99,30 };
-	double ret = Array_Average(&arr, 9);
-	printf("%f", ret);
-	//
+
+void reverse_Array(char array[], int size) {
+	char* start = array;
+	char* end = array + size - 1;
+	for (int i = 0; i < size / 2; i++) {
+		char temp = *start;
+		*start = *end;
+		*end = temp;
+		start++;
+		end--;
+	}
 }
+//
+//double Array_Average(int* arr, int size) {
+//	double sum = 0;
+//	for (int i = 0; i < size; i++) {
+//		sum += arr[i];
+//	}
+//	return sum / size;
+//}
+//
+//int main() {
+//	char arr1[] = "evol";
+//	int len = strlen(arr1);
+//	reverse_Array(arr1, len);
+//	printf("Reversed string: %s\n", arr1);
+//
+//	int arr[] = { 1, 2, 3, 5, 8, 54, 8, 99, 30 };
+//	double ret = Array_Average(arr, 9);
+//	printf("Average: %f\n", ret);
+//
+//	return 0;
+//}
