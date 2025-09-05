@@ -182,12 +182,55 @@ struct语法
     将这些部分组合起来，void (*callback)(int) 表示 callback 是一个指针，它指向一个接受一个 int 类型参数并返回 void 的函数。
 */
 
-void my_fun(void(*callback)(int), int x)
-{
-    callback()
+
+/*
+// 回调函数原型声明
+void callback(int x, int y);
+
+// 回调函数定义
+void callback(int x, int y) {
+    if (x) {
+        printf("这个函数大\n");
+    }
+    else {
+        printf("这个函数小\n");
+    }
 }
 
-void callback(int x, int y)
-{
-    x ? y : printf("这个函数大",__func__);
+// 接受回调函数的函数
+void my_fun(void (*callback)(int, int), int x) {
+    callback(4, 5 * x);
 }
+
+int main() {
+    my_fun(callback, 2);
+    printf("运算值为：");
+    return 0;
+}
+
+*/
+
+
+/*二维数组初始化
+int main()
+{
+    int array[2][2] = { 0,0,0,0 };
+    for (int i = 0; i < 2; i++)
+    {
+            for (int j = 0; j < 2; j++)
+            {
+                printf("%d ", array[i][j]);
+            }
+            printf("\n");
+
+    }
+    return 0;
+}
+*/
+
+//防止头文件被重复包含
+//#ifndef
+//#define
+//
+//#endif
+
