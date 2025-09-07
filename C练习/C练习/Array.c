@@ -97,7 +97,7 @@ int main()
 }*/
 
 /* 3.反转数组
-*/
+
 void reverve_Array(char array[],int size)
 {
 	char* start = array;
@@ -112,18 +112,18 @@ void reverve_Array(char array[],int size)
 	}
 }
 
-//int main()
-//{
-//	char arr1[] = {"evol"};
-//	int len = 4;
-//	char arr2[100];
-//
-//	reverve_Array(arr1, len);
-//	int arr[] = { 1,2,3,5,8,54,8,99,30 };
-//	/*double ret = Array_Average(&arr, 9);*/
-//	printf("%s", arr1);
-//	//
-//}
+int main()
+{
+	char arr1[] = {"evol"};
+	int len = 4;
+	char arr2[100];
+
+	reverve_Array(arr1, len);
+	int arr[] = { 1,2,3,5,8,54,8,99,30 };
+	/*double ret = Array_Average(&arr, 9);
+	printf("%s", arr1);
+	
+}
 
 
 void reverse_Array(char array[], int size) {
@@ -137,24 +137,25 @@ void reverse_Array(char array[], int size) {
 		end--;
 	}
 }
-//
-//double Array_Average(int* arr, int size) {
-//	double sum = 0;
-//	for (int i = 0; i < size; i++) {
-//		sum += arr[i];
-//	}
-//	return sum / size;
-//}
-//
-//int main() {
-//	char arr1[] = "evol";
-//	int len = strlen(arr1);
-//	reverse_Array(arr1, len);
-//	printf("Reversed string: %s\n", arr1);
-//
-//	int arr[] = { 1, 2, 3, 5, 8, 54, 8, 99, 30 };
-//	double ret = Array_Average(arr, 9);
-//	printf("Average: %f\n", ret);
-//
-//	return 0;
-//}
+
+double Array_Average(int* arr, int size) {
+	double sum = 0;
+	for (int i = 0; i < size; i++) {
+		sum += arr[i];
+	}
+	return sum / size;
+}
+
+int main() {
+	char arr1[] = "evol";
+	int len = strlen(arr1);
+	reverse_Array(arr1, len);
+	printf("Reversed string: %s\n", arr1);
+
+	int arr[] = { 1, 2, 3, 5, 8, 54, 8, 99, 30 };
+	double ret = Array_Average(arr, 9);
+	printf("Average: %f\n", ret);
+
+	return 0;
+}
+*/

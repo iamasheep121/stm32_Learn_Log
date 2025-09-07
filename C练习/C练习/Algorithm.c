@@ -3,6 +3,7 @@
 #include<ctype.h>
 #include<math.h>
 #include<stdlib.h>
+#include<string.h>
 /*
 	@beilf 简易计算器，主要功能有加减乘除
 */
@@ -184,25 +185,114 @@ unsigned long long fibonacci(int n)
 //	}
 //	return 0;
 //}
+//
+//#include <stdio.h>
+//
+//int main() {
+//	int hour = 0;
+//	int min = 0;
+//	int s = 0;
+//	scanf("%d", &s);
+//	if (s == 0)
+//	{
+//		printf("%d %d %d", 0, 0, 0);
+//	}
+//	else if (s > 0)
+//	{
+//		hour = s / 3600;
+//		s = s % 3600;
+//		min = s / 60;
+//		s = s % 60;
+//	}
+//	printf("%d %d %d", hour, min, s);
+//	return 0;
+//}
 
+
+//#include <stdio.h>
+//int fun(int n);
+//int main() {
+//	int n = 0;
+//	scanf("%d", &n);
+//	int ret = fun(n);
+//	printf("%d", ret);
+//	return 0;
+//}
+//int fun(int n) {
+//	if (n <= 1) {
+//		return 1;
+//	}
+//
+//	int prev = 1;
+//	int current = 1;
+//	for (int i = 2; i <= n; i++) {
+//		current = prev + i;
+//		prev = current - i;
+//	}
+//	return current;
+//}
+
+//#include <stdio.h>
+//int main() {
+//	int T = 0;
+//	int n = 0;
+//	scanf("%d", &T);
+//	for (int i = 0; i < T; i++) {
+//		scanf("%d", &n);
+//		if (n <= 1) {
+//			printf("No\n");
+//		}
+//		else if (n > 1) {
+//			for (int i = 2; i < n; i++)
+//				if (n % i == 0) {
+//					printf("No\n");
+//				}
+//		}
+//		else {
+//			printf("Yes\n");
+//		}
+//	}
+//	return 0;
+//}
+
+#include <stdbool.h>
 #include <stdio.h>
+#include <stdlib.h>
+int Max_Min(int arr[], int size);
 
 int main() {
-	int hour = 0;
-	int min = 0;
-	int s = 0;
-	scanf("%d", &s);
-	if (s == 0)
-	{
-		printf("%d %d %d", 0, 0, 0);
-	}
-	else if (s > 0)
-	{
-		hour = s / 3600;
-		s = s % 3600;
-		min = s / 60;
-		s = s % 60;
-	}
-	printf("%d %d %d", hour, min, s);
-	return 0;
+    int n1 = 0;
+    scanf("%d", &n1);
+    int* arr1 = (int*)malloc(n1 * sizeof(int));
+    if (arr1 == NULL)
+    {
+        return false;
+    }
+
+    for (int i = 0; i < n1; i++)
+    {
+        scanf("%d", &arr1[i]);
+    }
+    int result = Max_Min(arr1, n1);
+    printf("%d", result);
+    return 0;
+}
+
+int Max_Min(int arr[], int size)
+{
+    int max = arr[0];
+    int min = arr[0];
+    for (int i = 0; i < size; i++)
+    {
+        if (arr[i] > max)
+        {
+            max = arr[i];
+        }
+        else if (arr[i] < min)
+        {
+            min = arr[i];
+        }
+    }
+    return max - min;
+
 }
