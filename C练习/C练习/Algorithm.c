@@ -255,6 +255,8 @@ unsigned long long fibonacci(int n)
 //	return 0;
 //}
 
+
+/*
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -296,3 +298,290 @@ int Max_Min(int arr[], int size)
     return max - min;
 
 }
+*/
+/*
+#define MOD (10 ^ 9 + 7)
+int dp[1001][1001];
+
+#include <stdio.h>
+int fun(int i, int j);
+int main() {
+    int n, m;
+    scanf("%d %d", &n, &m);
+    for (int i = 0; i <= n; i++){
+        for (int j = 0; j <= m; j++){
+            dp[i][j] = -1;
+        }
+    }
+    int ret = fun(n, m);
+    printf("%d",ret);
+    return 0;
+}
+
+int fun(int i, int j)
+{
+    if (i == 1 && j == 1)
+    {
+        return 1;
+    }
+    else if (i >= 2 && j == 1) {
+        return fun(i - 1, 1);
+    }
+    else if (j >= 2 && i == 1) {
+        return fun(i, j - 1);
+    }
+    else if (i >= 2 && j >= 2) {
+        if (dp[i][j] != -1)
+        {
+            return dp[i][j];
+        }
+       dp[i][j] = ( fun(i - 1, j ) + fun( i, j - 1 ) % MOD );
+
+        return (fun(i - 1, j) + fun(i, j - 1));
+    }
+    return 0;
+}
+
+
+#include <stdio.h>
+
+#define MOD 1000000007
+
+int dp[1001][1001]; // 使用二维数组存储中间结果，避免重复计算
+
+int fun(int i, int j) {
+    if (i == 1 && j == 1) {
+        return 1;
+    }
+    else if (i >= 2 && j == 1) {
+        return fun(i - 1, 1);
+    }
+    else if (j >= 2 && i == 1) {
+        return fun(i, j - 1);
+    }
+    else if (i >= 2 && j >= 2) {
+        if (dp[i][j] != -1) { // 如果已经计算过，直接返回结果
+            return dp[i][j];
+        }
+        dp[i][j] = (fun(i - 1, j) + fun(i, j - 1)) % MOD; // 计算并存储结果
+        return dp[i][j];
+    }
+    return 0; // 默认返回0，避免编译器警告
+}
+
+int main() {
+    int n, m;
+    scanf("%d %d", &n, &m);
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= m; j++) {
+            dp[i][j] = -1; // 初始化dp数组
+        }
+    }
+    int ret = fun(n, m);
+    printf("%d", ret);
+    return 0;
+}
+*/
+
+//#include <stdio.h>
+//#include <stdlib.h>
+//#define MAX 10
+//int main() {
+//    int n = 0;
+//    int i = 0;
+//    int put[MAX] = { 0 };
+//    while (1) {
+//        scanf("%d", &n);
+//        if (n == 0)
+//        {
+//            break;
+//        }
+//        if (i >= MAX) {
+//            printf("数组满了");
+//            break;
+//        }
+//        put[i] = n;
+//        i++;
+//    }
+//    while (1) {
+//        printf("%d ", put[i - 1]);
+//        if (i == 1) { break; }
+//        i--;
+//    }
+//    return 0;;
+//}
+
+//#include <stddef.h>
+//#include <stdio.h>
+//int max_Min_diff(int arr[], int size);
+//int var(int arr[], int size);
+//
+//int main() {
+//    int T = 0;
+//    long long int var1 = 0;
+//    long int ext = 0;
+//    scanf("%d", &T);
+//    while (T--)
+//    {
+//        int n = 0;
+//        scanf("%d", &n);
+//        int* arr = NULL;
+//        arr = molloc(n * sizeof(int));
+//        for (int i = 0; i < n; i++)
+//        {
+//            scanf("%d", &arr[i]);
+//        }
+//
+//        ext = max_Min_diff(arr, n);
+//        var1 = var(arr, n);
+//        printf("%ld\n %lld\n", ext, var);
+//    }
+//
+//
+//    return 0;
+//}
+//
+//int max_Min_diff(int arr[], int size)
+//{
+//    int max = arr[0];
+//    int min = arr[0];
+//    for (int i = 0; i < size; i++)
+//    {
+//        if (arr[i] < min)
+//        {
+//            arr[i] = min;
+//        }
+//    }
+//    for (int j = 0; j < size; j++)
+//    {
+//        if (arr[j] > max)
+//        {
+//            arr[j] = max;
+//        }
+//    }
+//    return max - min;
+//}
+//
+//int var(int arr[], int size)
+//{
+//    long int a = 0;
+//    int sum = 0;
+//    long long int diff = 0;
+//    for (int i = 0; i < size; i++)
+//    {
+//        sum = sum + arr[i];
+//    }
+//    a = (size / 1) * sum;
+//
+//    for (int j = 0; j < size; j++)
+//    {
+//        diff = (arr[j] - a) * (arr[j] - a);
+//    }
+//    return (size / 1) * diff;
+//}
+
+//#include <stdio.h>
+//int pro_cnt(int arr[], int size, int k);
+//
+//int main() {
+//    int n, k, T;
+//    scanf("%d", &T);
+//    int arr[T] ;
+//    while (T--)
+//    {
+//        scanf("%d %d", &n, &k);
+//        for (int i = 0; i < n; i++)
+//        {
+//            scanf("%d", &arr[i]);
+//        }
+//        int cnt = pro_cnt(arr, n, k);
+//        printf("%d\n", cnt);
+//    }
+//
+//    return 0;
+//}
+//
+//int pro_cnt(int arr[], int size, int k)
+//{
+//    int S = 0, cnt = 0;
+//    for (int i = 1; i < size; i++)
+//    {
+//        if (arr[i] >= k) S = S + arr[i];
+//        if (arr[i] == 0 && S >= 1)
+//        {
+//            S = S - 1;
+//            cnt = cnt + 1;
+//        }
+//        return cnt;
+//    }
+//}
+
+//#include <stdio.h>
+//int x_num(int size, int x);
+//
+//int main() {
+//    int n, x;
+//    scanf("%d %d", &n, &x);
+//    int sum = 0;
+//    sum = x_num(n, x);
+//    printf("%d", sum);
+//    return 0;
+//}
+//
+//int x_num(int size, int x)
+//{
+//    int count = 0;
+//    for (int num = 1; num < size; num++)
+//    {
+//        int temp = num;
+//        while (temp > 0) {
+//
+//            int digit = temp % 10;
+//            if (digit == x)
+//            {
+//                count++;
+//            }
+//            temp /= 10;
+//
+//        }
+//    }
+//    return count;
+//}
+
+//#include <stdio.h>
+//
+//int main() {
+//    int n = 0, m = 0;
+//    scanf("%d %d", 3, 3);
+//    int** arr = (int**)malloc (sizeof(int) * n);
+//    for (int i = 0; i < n; i++) {
+//        arr[i] = (int*)(sizeof(int) * m);
+//        }
+//        
+//    for (int i = 0; i < n; i++)
+//    {
+//        for (int j = 0; j < m; j++)
+//        {
+//            scanf("%d", &arr[i][j]);
+//        }
+//    }
+//
+//    //转置
+//    int** dest = (int**)malloc(n * sizeof(int));
+//        for (int i = 0; i < n; i++)
+//        {
+//            dest[i] = (int*)malloc(sizeof(int) * m);
+//    }
+//    for (int i = 0; i < m; i++)
+//    {
+//        for (int j = 0; j < n; j++)
+//        {
+//            dest[i][j] = arr[j][i];
+//            printf("%d ", dest[i][j]);
+//        }
+//    }
+//    free(arr);
+//    free(dest);
+//
+//    return 0;
+//}
