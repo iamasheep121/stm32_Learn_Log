@@ -250,18 +250,18 @@ int main()
  * @param n int整型 你需要求 n 的平方根
  * @return double浮点型
  */
-#include "math.h"
-#include <math.h>
-double findSqrt(int n) {
-    // write code here
-    double result = sqrt(n);
-    return result;
-}
-
-int main()
-{
-    int a, b;
-    scanf_s("%d", &a);
-    double result = findSqrt(a);
-    printf("%.11f", result);
-}
+//#include "math.h"
+//#include <math.h>
+//double findSqrt(int n) {
+//    // write code here
+//    double result = sqrt(n);
+//    return result;
+//}
+//
+//int main()
+//{
+//    int a, b;
+//    scanf_s("%d", &a);
+//    double result = findSqrt(a);
+//    printf("%.11f", result);
+//}
