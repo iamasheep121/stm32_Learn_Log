@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
+//#define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<ctype.h>
 #include<math.h>
@@ -584,4 +584,51 @@ int main() {
 //    free(dest);
 //
 //    return 0;
+//}
+//
+//#include <stdio.h>
+//#include "string.h"
+//int animals(char* animals);
+//int main() {
+//    char s1[9];
+//    char s2[9];
+//    scanf("%s,%s", s1, s2);
+//
+//    //数据处理
+//    int a = animals(s1);
+//    int b = animals(s2);
+//
+//    //赢的情况
+//    if (a == 0 && b == 1 || a == 1 && b == 2 || a == 2 && b == 3 || a == 3 && b == 0)
+//        printf("win");
+//    //输的情况
+//    else if (b == 0 && a == 1 || b == 1 && a == 2 || b == 2 && a == 3 || b == 3 && a == 0)
+//        printf("lose");
+//    //平局
+//    else
+//        printf("tie");
+//
+//    return 0;
+//}
+//
+//int animals(char* animals)
+//{
+//    if (strcmp(animals, "elephant") == 0) return 0;
+//    if (strcmp(animals, "tiger") == 0) return 1;
+//    if (strcmp(animals, "cat") == 0) return 2;
+//    if (strcmp(animals, "mouse") == 0) return 3;
+//    return -1;
+//}
+
+//long long aTimesB(int Number1, int Number2) {
+//    return abs(Number1 * Number2);
+//    // write code here
+//}
+//
+//int main()
+//{
+//    int a, b;
+//    scanf_s("%d %d", &a, &b);
+//    int result = aTimesB(a, b);
+//    printg("%d", result);
 //}
