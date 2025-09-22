@@ -1,5 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
+#include<stdlib.h>
 /*
 int main()
 {
@@ -234,3 +235,33 @@ int main()
 //
 //#endif
 
+
+//long long aTimesB(int Number1, int Number2) {
+//    return abs(Number1 * Number2);
+//    // write code here
+//}
+//
+
+
+/**
+ * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
+ *
+ * 求非负整数 n 的平方根
+ * @param n int整型 你需要求 n 的平方根
+ * @return double浮点型
+ */
+#include "math.h"
+#include <math.h>
+double findSqrt(int n) {
+    // write code here
+    double result = sqrt(n);
+    return result;
+}
+
+int main()
+{
+    int a, b;
+    scanf_s("%d", &a);
+    double result = findSqrt(a);
+    printf("%.11f", result);
+}
