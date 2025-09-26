@@ -30,3 +30,7 @@
 .\objects\main.o: .\Library\misc.h
 .\objects\main.o: .\system\delay.h
 .\objects\main.o: .\Hardware\LED.h
+.\objects\main.o: .\Hardware\KEY.h
+.\objects\main.o: .\Hardware\BUZZER.h
+.\objects\main.o: .\Hardware\LightSensor.h
+.\objects\main.o: .\Hardware\OLED.h

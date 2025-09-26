@@ -30,6 +30,9 @@
 ".\objects\delay.o"
 ".\objects\key.o"
 ".\objects\led.o"
+".\objects\buzzer.o"
+".\objects\lightsensor.o"
+".\objects\oled.o"
 --strict --scatter ".\Objects\Õ‚…Ë¡∑œ∞.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

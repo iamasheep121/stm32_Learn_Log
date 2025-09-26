@@ -17,7 +17,7 @@ void Key_Init()
 uint8_t Key_GetNumber(void)
 {
 	uint8_t KeyNum = 0;
-	if(GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_1)==0)
+	if(GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_1)==0)
 	{
 		Delay_ms(20);
 		while (GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_1)==0);
@@ -26,7 +26,7 @@ uint8_t Key_GetNumber(void)
 		
 	}
 	
-	if(GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_11)==0)
+	if(GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_11)==0)
 	{
 		Delay_ms(20);
 		while (GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_11)==0);
@@ -37,4 +37,5 @@ uint8_t Key_GetNumber(void)
 	
 	return KeyNum;
 }
+
 

@@ -2,6 +2,7 @@
 #define __KET_H
 void Key_Init();
 uint8_t Key_GetNumber(void);
+void Key_Turn(void);
 
 
 #endif
