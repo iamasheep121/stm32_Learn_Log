@@ -5,39 +5,36 @@
 #include "BUZZER.h"
 #include "LightSensor.h"
 #include "OLED.h"
+#include "CountSensor.h"
+#include "Timer.h"
 
-int main()
+
+uint16_t count ;
+
+
+int main(void)
 {
-	LED_Init();
-	Key_Init();
-	OLED_Init();
-	OLED_ShowChar(1,1,'A');
-	while (1) {
-        // 示例1: 进度条动画
-        OLED_Clear();
-        OLED_ShowString(1, 1, "Progress:");
-        for (uint8_t i = 0; i <= 100; i += 5) {
-            OLED_ProgressBar(2, i);
-            Delay_ms(100);
-        }
-        Delay_ms(1000);
-        
-        // 示例2: 滚动文本
-        OLED_Clear();
-        OLED_ScrollText(3, "Hello! This is a scrolling text demo!", 150);
-        Delay_ms(1000);
-        
-        // 示例3: 移动的小球
-        OLED_Clear();
-        OLED_ShowString(1, 1, "Ball Animation");
-        OLED_BallAnimation(10, 110, 2, 50);
-        Delay_ms(1000);
-        
-        // 示例4: 图形显示
-        OLED_Clear();
-        OLED_ShowString(1, 1, "Graphics Demo");
-        OLED_DrawRectangle(10, 2, 117, 5);    // 绘制矩形框
-        OLED_FillRectangle(15, 3, 30, 4);     // 填充矩形
-        Delay_ms(2000);
-    }
+	
+	
+	/*模块初始化*/
+	OLED_Init();			
+
+	Timer_Init();
+	OLED_ShowString(1, 1, "Num:");
+	while(1)
+	{
+		OLED_ShowNum(1,5,count,5);
+	}
+	
+
+}
+
+void TIM2_IRQHandler(void)
+{
+	if((TIM_GetITStatus(TIM2,TIM_IT_Update)==SET))
+	{
+		
+		count++;
+		TIM_ClearITPendingBit(TIM2,TIM_IT_Update);
+	}
 }

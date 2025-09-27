@@ -28,11 +28,13 @@
 ".\objects\main.o"
 ".\objects\stm32f10x_it.o"
 ".\objects\delay.o"
+".\objects\timer.o"
 ".\objects\key.o"
 ".\objects\led.o"
 ".\objects\buzzer.o"
 ".\objects\lightsensor.o"
 ".\objects\oled.o"
+".\objects\countsensor.o"
 --strict --scatter ".\Objects\Õ‚…Ë¡∑œ∞.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

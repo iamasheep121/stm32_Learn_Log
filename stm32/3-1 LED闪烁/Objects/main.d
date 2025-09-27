@@ -34,3 +34,5 @@
 .\objects\main.o: .\Hardware\BUZZER.h
 .\objects\main.o: .\Hardware\LightSensor.h
 .\objects\main.o: .\Hardware\OLED.h
+.\objects\main.o: .\Hardware\CountSensor.h
+.\objects\main.o: .\system\Timer.h
