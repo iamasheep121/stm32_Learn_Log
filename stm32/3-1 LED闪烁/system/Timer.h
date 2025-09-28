@@ -3,5 +3,5 @@
 
 void Timer_Init(void);
 //void TIM2_IRQHandler(void);
-
+uint16_t Timer_GetCount(void);
 #endif

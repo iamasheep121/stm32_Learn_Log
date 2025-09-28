@@ -36,3 +36,6 @@
 .\objects\main.o: .\Hardware\OLED.h
 .\objects\main.o: .\Hardware\CountSensor.h
 .\objects\main.o: .\system\Timer.h
+.\objects\main.o: .\Hardware\Encode.h
+.\objects\main.o: .\Hardware\PWM.h
+.\objects\main.o: .\Hardware\Servo.h

@@ -670,6 +670,11 @@
               <FileType>1</FileType>
               <FilePath>.\User\stm32f10x_it.c</FilePath>
             </File>
+            <File>
+              <FileName>test.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\test.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -764,6 +769,36 @@
               <FileName>CountSensor.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Hardware\CountSensor.h</FilePath>
+            </File>
+            <File>
+              <FileName>Encode.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\Encode.c</FilePath>
+            </File>
+            <File>
+              <FileName>Encode.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\Encode.h</FilePath>
+            </File>
+            <File>
+              <FileName>PWM.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\PWM.c</FilePath>
+            </File>
+            <File>
+              <FileName>PWM.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\PWM.h</FilePath>
+            </File>
+            <File>
+              <FileName>Servo.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\Servo.c</FilePath>
+            </File>
+            <File>
+              <FileName>Servo.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\Servo.h</FilePath>
             </File>
           </Files>
         </Group>

@@ -27,6 +27,7 @@
 ".\objects\stm32f10x_wwdg.o"
 ".\objects\main.o"
 ".\objects\stm32f10x_it.o"
+".\objects\test.o"
 ".\objects\delay.o"
 ".\objects\timer.o"
 ".\objects\key.o"
@@ -35,6 +36,9 @@
 ".\objects\lightsensor.o"
 ".\objects\oled.o"
 ".\objects\countsensor.o"
+".\objects\encode.o"
+".\objects\pwm.o"
+".\objects\servo.o"
 --strict --scatter ".\Objects\Õ‚…Ë¡∑œ∞.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
