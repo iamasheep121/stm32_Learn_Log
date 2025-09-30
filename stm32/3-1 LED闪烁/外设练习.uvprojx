@@ -800,6 +800,46 @@
               <FileType>5</FileType>
               <FilePath>.\Hardware\Servo.h</FilePath>
             </File>
+            <File>
+              <FileName>Motor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\Motor.c</FilePath>
+            </File>
+            <File>
+              <FileName>Motor.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\Motor.h</FilePath>
+            </File>
+            <File>
+              <FileName>IC.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\IC.c</FilePath>
+            </File>
+            <File>
+              <FileName>IC.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\IC.h</FilePath>
+            </File>
+            <File>
+              <FileName>PWMI.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\PWMI.c</FilePath>
+            </File>
+            <File>
+              <FileName>PWMI.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\PWMI.h</FilePath>
+            </File>
+            <File>
+              <FileName>Encode2.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\Encode2.c</FilePath>
+            </File>
+            <File>
+              <FileName>Encode2.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\Encode2.h</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

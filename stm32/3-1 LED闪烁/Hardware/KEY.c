@@ -34,28 +34,28 @@ void Key_Init()
 	
 }
 
-void EXTI15_10_IRQHandler(void)
-{
-    if (EXTI_GetITStatus(EXTI_Line11) == SET)
-    {
-        Delay_ms(20); // 消抖
-        if (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_11) == 0)
-        {
-            static uint8_t led_state = 0;
-            if (led_state == 0)
-            {
-                BLUE_LED_ON(); // 打开LED
-                led_state = 1;
-            }
-            else
-            {
-                BLUE_LED_OFF(); // 关闭LED
-                led_state = 0;
-            }
-        }
-        EXTI_ClearITPendingBit(EXTI_Line11); // 清除中断挂起位
-    }
-}
+//void EXTI15_10_IRQHandler(void)
+//{
+//    if (EXTI_GetITStatus(EXTI_Line11) == SET)
+//    {
+//        Delay_ms(20); // 消抖
+//        if (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_11) == 0)
+//        {
+//            static uint8_t led_state = 0;
+//            if (led_state == 0)
+//            {
+//                BLUE_LED_ON(); // 打开LED
+//                led_state = 1;
+//            }
+//            else
+//            {
+//                BLUE_LED_OFF(); // 关闭LED
+//                led_state = 0;
+//            }
+//        }
+//        EXTI_ClearITPendingBit(EXTI_Line11); // 清除中断挂起位
+//    }
+//}
 
 
 uint8_t Key_GetNumber(void)

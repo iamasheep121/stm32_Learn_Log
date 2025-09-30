@@ -1124,15 +1124,18 @@ void TIM_SelectSlaveMode(TIM_TypeDef* TIMx, uint16_t TIM_SlaveMode);
 void TIM_SelectMasterSlaveMode(TIM_TypeDef* TIMx, uint16_t TIM_MasterSlaveMode);
 void TIM_SetCounter(TIM_TypeDef* TIMx, uint16_t Counter);
 void TIM_SetAutoreload(TIM_TypeDef* TIMx, uint16_t Autoreload);
+
 void TIM_SetCompare1(TIM_TypeDef* TIMx, uint16_t Compare1);
 void TIM_SetCompare2(TIM_TypeDef* TIMx, uint16_t Compare2);
 void TIM_SetCompare3(TIM_TypeDef* TIMx, uint16_t Compare3);
 void TIM_SetCompare4(TIM_TypeDef* TIMx, uint16_t Compare4);
+
 void TIM_SetIC1Prescaler(TIM_TypeDef* TIMx, uint16_t TIM_ICPSC);
 void TIM_SetIC2Prescaler(TIM_TypeDef* TIMx, uint16_t TIM_ICPSC);
 void TIM_SetIC3Prescaler(TIM_TypeDef* TIMx, uint16_t TIM_ICPSC);
 void TIM_SetIC4Prescaler(TIM_TypeDef* TIMx, uint16_t TIM_ICPSC);
 void TIM_SetClockDivision(TIM_TypeDef* TIMx, uint16_t TIM_CKD);
+
 uint16_t TIM_GetCapture1(TIM_TypeDef* TIMx);
 uint16_t TIM_GetCapture2(TIM_TypeDef* TIMx);
 uint16_t TIM_GetCapture3(TIM_TypeDef* TIMx);
