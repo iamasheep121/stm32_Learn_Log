@@ -4,8 +4,8 @@
 ".\objects\system_stm32f10x.o"
 ".\objects\misc.o"
 ".\objects\stm32f10x_adc.o"
-".\objects\stm32f10x_bkp.o"
 ".\objects\stm32f10x_can.o"
+".\objects\stm32f10x_bkp.o"
 ".\objects\stm32f10x_cec.o"
 ".\objects\stm32f10x_crc.o"
 ".\objects\stm32f10x_dac.o"
@@ -45,6 +45,7 @@
 ".\objects\pwmi.o"
 ".\objects\encode2.o"
 ".\objects\adc.o"
+".\objects\adc2.o"
 --strict --scatter ".\Objects\Õ‚…Ë¡∑œ∞.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

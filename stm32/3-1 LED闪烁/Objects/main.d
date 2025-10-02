@@ -34,7 +34,4 @@
 .\objects\main.o: .\Hardware\BUZZER.h
 .\objects\main.o: .\Hardware\LightSensor.h
 .\objects\main.o: .\Hardware\OLED.h
-.\objects\main.o: .\Hardware\PWMI.h
-.\objects\main.o: .\Hardware\Encode2.h
-.\objects\main.o: .\Hardware\ADC.h
-.\objects\main.o: .\Hardware\MY_DMA.h
+.\objects\main.o: .\Hardware\ADC2.h

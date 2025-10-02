@@ -4,6 +4,7 @@ void AD_Init(void)
 {
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA,ENABLE);
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_ADC2,ENABLE);
+	RCC_AHBPeriphClockCmd(RCC_AHBPeriph_DMA1,ENABLE);
 	
 	/*设置ADC时钟*/
 	RCC_ADCCLKConfig(RCC_PCLK2_Div6);	
@@ -14,7 +15,7 @@ void AD_Init(void)
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_Init(GPIOA, &GPIO_InitStructure);
 	
-	//ADC规则通道配置,在这里可以启用多个通道，最多同时16个通道，不过要注意引脚，要复用一下
+	/*ADC规则通道配置,在这里可以启用多个通道，最多同时16个通道，不过要注意引脚，要复用一下*/
 	
 	
 	ADC_InitTypeDef  ADC_InitStruct;

@@ -436,11 +436,6 @@
               <FilePath>.\Library\stm32f10x_adc.h</FilePath>
             </File>
             <File>
-              <FileName>stm32f10x_bkp.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Library\stm32f10x_bkp.c</FilePath>
-            </File>
-            <File>
               <FileName>stm32f10x_bkp.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Library\stm32f10x_bkp.h</FilePath>
@@ -449,6 +444,11 @@
               <FileName>stm32f10x_can.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Library\stm32f10x_can.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_bkp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Library\stm32f10x_bkp.c</FilePath>
             </File>
             <File>
               <FileName>stm32f10x_can.h</FileName>
@@ -859,6 +859,16 @@
               <FileName>ADC.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Hardware\ADC.h</FilePath>
+            </File>
+            <File>
+              <FileName>ADC2.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\ADC2.c</FilePath>
+            </File>
+            <File>
+              <FileName>ADC2.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\ADC2.h</FilePath>
             </File>
           </Files>
         </Group>
