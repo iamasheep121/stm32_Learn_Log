@@ -28,4 +28,13 @@
 .\objects\main.o: .\Library\stm32f10x_usart.h
 .\objects\main.o: .\Library\stm32f10x_wwdg.h
 .\objects\main.o: .\Library\misc.h
-.\objects\main.o: .\system\Delay.h
+.\objects\main.o: .\system\delay.h
+.\objects\main.o: .\Hardware\LED.h
+.\objects\main.o: .\Hardware\KEY.h
+.\objects\main.o: .\Hardware\BUZZER.h
+.\objects\main.o: .\Hardware\LightSensor.h
+.\objects\main.o: .\Hardware\OLED.h
+.\objects\main.o: .\Hardware\PWMI.h
+.\objects\main.o: .\Hardware\Encode2.h
+.\objects\main.o: .\Hardware\ADC.h
+.\objects\main.o: .\Hardware\MY_DMA.h

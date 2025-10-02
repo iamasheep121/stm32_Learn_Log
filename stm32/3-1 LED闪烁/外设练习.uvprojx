@@ -700,6 +700,16 @@
               <FileType>5</FileType>
               <FilePath>.\System\Timer.h</FilePath>
             </File>
+            <File>
+              <FileName>MY_DMA.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\MY_DMA.c</FilePath>
+            </File>
+            <File>
+              <FileName>MY_DMA.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\MY_DMA.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -839,6 +849,16 @@
               <FileName>Encode2.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Hardware\Encode2.h</FilePath>
+            </File>
+            <File>
+              <FileName>ADC.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\ADC.c</FilePath>
+            </File>
+            <File>
+              <FileName>ADC.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\ADC.h</FilePath>
             </File>
           </Files>
         </Group>
