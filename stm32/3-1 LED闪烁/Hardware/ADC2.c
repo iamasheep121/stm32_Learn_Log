@@ -64,7 +64,6 @@ void AD2_Init( void )
 	ADC_DMACmd(ADC1,ENABLE);
 	ADC_Cmd(ADC1,ENABLE);
 	
-
 	
 	/*校准*/
 	
@@ -72,6 +71,11 @@ void AD2_Init( void )
 	while(ADC_GetResetCalibrationStatus(ADC1) == SET);
 	ADC_StartCalibration(ADC1);
 	while(ADC_GetCalibrationStatus(ADC1)==SET);
+	
+	
+	//添加中断
+	
+	
 	
 	
 	ADC_SoftwareStartConvCmd(ADC1,ENABLE);

@@ -46,7 +46,8 @@
 ".\objects\encode2.o"
 ".\objects\adc.o"
 ".\objects\adc2.o"
---strict --scatter ".\Objects\外设练习.sct"
+".\objects\serial.o"
+--library_type=microlib --strict --scatter ".\Objects\外设练习.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list ".\Listings\外设练习.map" -o .\Objects\外设练习.axf

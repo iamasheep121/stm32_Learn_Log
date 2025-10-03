@@ -13,7 +13,7 @@ void OLED_ShowBinNum(uint8_t Line, uint8_t Column, uint32_t Number, uint8_t Leng
 
 /**
   * @brief  网上找的代码
-  * @param  deepseek
+  * @param  Deepseek
   * @retval 无
   */
   
