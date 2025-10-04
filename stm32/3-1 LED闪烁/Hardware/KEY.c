@@ -18,20 +18,20 @@ void Key_Init()
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_Init(GPIOB ,&GPIO_InitStructure);
 	
-	EXTI_InitTypeDef EXTI_InitStruct;
-	EXTI_InitStruct.EXTI_Line = EXTI_Line11;
-	EXTI_InitStruct.EXTI_LineCmd = ENABLE;
-	EXTI_InitStruct.EXTI_Mode = EXTI_Mode_Interrupt;
-	EXTI_InitStruct.EXTI_Trigger = EXTI_Trigger_Falling;
-	EXTI_Init(&EXTI_InitStruct);
-	
-	NVIC_InitTypeDef  NVIC_InitStruct;
-	NVIC_InitStruct.NVIC_IRQChannel = EXTI15_10_IRQn;
-	NVIC_InitStruct.NVIC_IRQChannelCmd = ENABLE;
-	NVIC_InitStruct.NVIC_IRQChannelPreemptionPriority = 2;
-	NVIC_InitStruct.NVIC_IRQChannelSubPriority = 1;
-	NVIC_Init(&NVIC_InitStruct);
-	
+//	EXTI_InitTypeDef EXTI_InitStruct;
+//	EXTI_InitStruct.EXTI_Line = EXTI_Line11;
+//	EXTI_InitStruct.EXTI_LineCmd = ENABLE;
+//	EXTI_InitStruct.EXTI_Mode = EXTI_Mode_Interrupt;
+//	EXTI_InitStruct.EXTI_Trigger = EXTI_Trigger_Falling;
+//	EXTI_Init(&EXTI_InitStruct);
+//	
+//	NVIC_InitTypeDef  NVIC_InitStruct;
+//	NVIC_InitStruct.NVIC_IRQChannel = EXTI15_10_IRQn;
+//	NVIC_InitStruct.NVIC_IRQChannelCmd = ENABLE;
+//	NVIC_InitStruct.NVIC_IRQChannelPreemptionPriority = 2;
+//	NVIC_InitStruct.NVIC_IRQChannelSubPriority = 1;
+//	NVIC_Init(&NVIC_InitStruct);
+//	
 }
 
 //void EXTI15_10_IRQHandler(void)
