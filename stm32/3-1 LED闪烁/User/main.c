@@ -4,103 +4,20 @@
 #include "KEY.h"
 #include "OLED.h"
 #include "Serial.h"
-//#include "ADC2.h"
-//uint8_t data;
-//uint8_t Serail_RxData[4] = {0x01,0x02,0x03,0x04};
-//uint8_t KeyNum;
-
-//int main(void)
-//{
-//	
-//	Serial_TxPacket[0] = 0x01;
-//	Serial_TxPacket[1] = 0x02;
-//	Serial_TxPacket[2] = 0x03;
-//	Serial_TxPacket[3] = 0x04;
-//	
-
-//	
-//	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
-//	OLED_Init();
-//	Serial_Init();
-//	
-//	while(1)
-//	{
-//		if (KeyNum == 1)				//按键1按下
-//		{
-//			Serial_TxPacket[0] ++;		//测试数据自增
-//			Serial_TxPacket[1] ++;
-//			Serial_TxPacket[2] ++;
-//			Serial_TxPacket[3] ++;
-//			
-//					//串口发送数据包Serial_TxPacket
-//			Serail_SendPacket();
-//			
-//			OLED_ShowHexNum(2, 1, Serial_TxPacket[0], 2);	//显示发送的数据包
-//			OLED_ShowHexNum(2, 4, Serial_TxPacket[1], 2);
-//			OLED_ShowHexNum(2, 7, Serial_TxPacket[2], 2);
-//			OLED_ShowHexNum(2, 10, Serial_TxPacket[3], 2);
-//		}
-//		
-//		if(Serial_GetRxFlag() == 1)
-//		{
-//			OLED_ShowHexNum(2, 1, Serial_RxPacket[0], 2);	//显示发送的数据包
-//			OLED_ShowHexNum(2, 4, Serial_RxPacket[1], 2);
-//			OLED_ShowHexNum(2, 7, Serial_RxPacket[2], 2);
-//			OLED_ShowHexNum(2, 10,Serial_RxPacket[3], 2);
-//		
-//		}
-//	}
-//}
+#include "MyI2C.h"
 
 
-uint8_t KeyNum;			//定义用于接收按键键码的变量
-
-int main(void)
+int main()
 {
+	OLED_Init();
+	MyI2C_Init();
+	MyI2C_Start();
+	MyI2C_SendByte( 0xD0 );
+	uint8_t Ack = MyI2C_ReceiveAck();
+	MyI2C_Stop();
+	OLED_ShowNum(1,1,Ack,3);
 	
-	/*模块初始化*/
-	OLED_Init();		//OLED初始化
-	Key_Init();			//按键初始化
-	Serial_Init();		//串口初始化
-	
-	/*显示静态字符串*/
-	OLED_ShowString(1, 1, "TxPacket");
-	OLED_ShowString(3, 1, "RxPacket");
-	
-	/*设置发送数据包数组的初始值，用于测试*/
-	Serial_TxPacket[0] = 0x01;
-	Serial_TxPacket[1] = 0x02;
-	Serial_TxPacket[2] = 0x03;
-	Serial_TxPacket[3] = 0x04;
-	
-	while (1)
-	{
-		KeyNum = Key_GetNumber();			//获取按键键码
-		if (KeyNum == 1)				//按键1按下
-		{
-			Serial_TxPacket[0] ++;		//测试数据自增
-			Serial_TxPacket[1] ++;
-			Serial_TxPacket[2] ++;
-			Serial_TxPacket[3] ++;
-			
-			Serail_SendPacket();		//串口发送数据包Serial_TxPacket
-			
-			OLED_ShowHexNum(2, 1, Serial_TxPacket[0], 2);	//显示发送的数据包
-			OLED_ShowHexNum(2, 4, Serial_TxPacket[1], 2);
-			OLED_ShowHexNum(2, 7, Serial_TxPacket[2], 2);
-			OLED_ShowHexNum(2, 10, Serial_TxPacket[3], 2);
-		}
-		
-		if (Serial_GetRxFlag() == 1)	//如果接收到数据包
-		{
-			OLED_ShowHexNum(4, 1, Serial_RxPacket[0], 2);	//显示接收的数据包
-			OLED_ShowHexNum(4, 4, Serial_RxPacket[1], 2);
-			OLED_ShowHexNum(4, 7, Serial_RxPacket[2], 2);
-			OLED_ShowHexNum(4, 10, Serial_RxPacket[3], 2);
-		}
-	}
 }
-
 
 
 

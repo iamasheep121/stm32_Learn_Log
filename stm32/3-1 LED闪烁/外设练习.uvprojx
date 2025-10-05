@@ -710,6 +710,16 @@
               <FileType>5</FileType>
               <FilePath>.\Hardware\MY_DMA.h</FilePath>
             </File>
+            <File>
+              <FileName>MyI2C.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\system\MyI2C.h</FilePath>
+            </File>
+            <File>
+              <FileName>MyI2C.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\System\MyI2C.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
