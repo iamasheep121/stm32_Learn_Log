@@ -104,6 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\C＋＋\learn\learn-journal\00_code\C练习\C练习\inc;D:\C＋＋\learn\learn-journal\00_code\C练习\C练习\tests;D:\C＋＋\learn\learn-journal\00_code\C练习\C练习\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -118,6 +119,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\C＋＋\learn\learn-journal\00_code\C练习\C练习\inc;D:\C＋＋\learn\learn-journal\00_code\C练习\C练习\tests;D:\C＋＋\learn\learn-journal\00_code\C练习\C练习\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -127,11 +129,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Algorithm.c" />
-    <ClCompile Include="Array.c" />
-    <ClCompile Include="data_structure.c" />
-    <ClCompile Include="Fuction.c" />
-    <ClCompile Include="sort.c" />
+    <ClCompile Include="src\Algorithm.c" />
+    <ClCompile Include="src\Array.c" />
+    <ClCompile Include="src\List.c" />
+    <ClCompile Include="src\Fuction.c" />
+    <ClCompile Include="src\main.c" />
+    <ClCompile Include="src\Queue.c" />
+    <ClCompile Include="src\sort.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\common.h" />
+    <ClInclude Include="inc\Queue.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

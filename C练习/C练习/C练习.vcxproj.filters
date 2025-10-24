@@ -1,34 +1,62 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="源文件">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="头文件">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
     <Filter Include="资源文件">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="tests">
+      <UniqueIdentifier>{f5d9d41a-1748-40db-84ba-654f6e8f4177}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="docs">
+      <UniqueIdentifier>{af6b9a10-6417-4628-b0b3-e6d9077e4549}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{38f4d824-bec5-40f1-8129-eff298fd1611}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\排序">
+      <UniqueIdentifier>{92a4b38f-325e-4fe5-a059-dbe15c907043}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\查找">
+      <UniqueIdentifier>{fc774875-bdfc-4294-ac19-a97af9a8d705}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\数据结构">
+      <UniqueIdentifier>{4d933d5d-d49b-4704-93d6-4eea92d6447d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Array.c">
-      <Filter>源文件</Filter>
+    <ClInclude Include="inc\Queue.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\common.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Algorithm.c">
+      <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="Fuction.c">
-      <Filter>源文件</Filter>
+    <ClCompile Include="src\Fuction.c">
+      <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="Algorithm.c">
-      <Filter>源文件</Filter>
+    <ClCompile Include="src\sort.c">
+      <Filter>src\排序</Filter>
     </ClCompile>
-    <ClCompile Include="sort.c">
-      <Filter>源文件</Filter>
+    <ClCompile Include="src\List.c">
+      <Filter>src\数据结构</Filter>
     </ClCompile>
-    <ClCompile Include="data_structure.c">
-      <Filter>源文件</Filter>
+    <ClCompile Include="src\Queue.c">
+      <Filter>src\数据结构</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Array.c">
+      <Filter>src\数据结构</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.c">
+      <Filter>tests</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

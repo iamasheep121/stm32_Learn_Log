@@ -1,3 +1,13 @@
-﻿  data_structure.c
-D:\C＋＋\learn\learn-journal\00_code\C练习\C练习\data_structure.c(208,24): warning C4047: “==”:“int”与“void *”的间接级别不同
+﻿  List.c
+D:\C＋＋\learn\learn-journal\00_code\C练习\C练习\inc\Queue.h(1,1): warning C4828: 文件包含在偏移 0x48b 处开始的字符，该字符在当前源字符集中无效(代码页 936)。
+  Queue.c
+D:\C＋＋\learn\learn-journal\00_code\C练习\C练习\inc\Queue.h(1,1): warning C4828: 文件包含在偏移 0x48b 处开始的字符，该字符在当前源字符集中无效(代码页 936)。
+D:\C＋＋\learn\learn-journal\00_code\C练习\C练习\src\Queue.c(126,19): warning C4133: “=”: 从“LinkNode *”到“LinkNode *”的类型不兼容
+D:\C＋＋\learn\learn-journal\00_code\C练习\C练习\src\Queue.c(145,23): warning C4133: “=”: 从“LinkNode *”到“LinkNode *”的类型不兼容
+D:\C＋＋\learn\learn-journal\00_code\C练习\C练习\src\Queue.c(160,16): warning C4047: “=”:“int *”与“int”的间接级别不同
+D:\C＋＋\learn\learn-journal\00_code\C练习\C练习\src\Queue.c(159,15): warning C4133: “初始化”: 从“LinkNode *”到“LinkNode *”的类型不兼容
+  main.c
+D:\C＋＋\learn\learn-journal\00_code\C练习\C练习\inc\Queue.h(1,1): warning C4828: 文件包含在偏移 0x48b 处开始的字符，该字符在当前源字符集中无效(代码页 936)。
+D:\C＋＋\learn\learn-journal\00_code\C练习\C练习\src\main.c(10,15): warning C4101: “Lq”: 未引用的局部变量
+  正在生成代码...
   C练习.vcxproj -> D:\C＋＋\learn\learn-journal\00_code\C练习\x64\Debug\C练习.exe
